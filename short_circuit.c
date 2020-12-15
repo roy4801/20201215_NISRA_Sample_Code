@@ -3,15 +3,10 @@
 
 int main()
 {
-    unsigned int random, key = 0;
-    random = rand();
-    printf("Give secret number: ");
-    scanf("%d", &key);
-    if ((key ^ random) == 0xdeadbeef)
-    {
-        printf("You got it!!\n");
-        return 0;
-    }
-    printf("No, keep trying.\n");
-    return 0;
+    int a = 1, b = -1;
+    if (a > 0 && b < 0)
+        printf("A\n");
+
+    if (a < 0 || b < 0)
+        printf("B\n");
 }

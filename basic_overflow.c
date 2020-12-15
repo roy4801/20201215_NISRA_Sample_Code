@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/* gcc -m32 -o basic_overflow basic_overflow.c -fno-stack-protector -zexecstack -fno-pie*/
+/* gcc -m32 -fno-stack-protector -o basic_overflow basic_overflow.c*/
 
 int main(int argc, char *argv[]){
 	char pwd[8] = "NISRA";
@@ -13,4 +13,3 @@ int main(int argc, char *argv[]){
     else printf("No, keep trying.\n\n");
     return 0;
 }
-
