@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+int main()
+{
     unsigned int random, key = 0;
-    // srand(time(NULL));
     random = rand();
     printf("Give secret number: ");
     scanf("%d", &key);
-    if( (key ^ random) == 0xdeadbeef ){
+    if ((key ^ random) == 0xdeadbeef)
+    {
         printf("You got it!!\n");
         return 0;
     }
