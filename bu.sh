@@ -5,3 +5,5 @@ for i in *; do
         gcc -o ${i%.*} ${i}
     fi
 done
+
+gcc -m32 -fno-stack-protector -o basic_overflow basic_overflow.c
